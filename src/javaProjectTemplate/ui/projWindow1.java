@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 
 import base_Math_Objects.vectorObjs.doubles.myPoint;
 import base_Math_Objects.vectorObjs.doubles.myVector;
-import base_Render_Interface.IRenderInterface;
+import base_Render_Interface.IGraphicsAppInterface;
 import base_UI_Objects.GUI_AppManager;
 import base_UI_Objects.windowUI.base.Base_DispWindow;
 import base_UI_Objects.windowUI.base.GUI_AppWinVals;
@@ -19,7 +19,7 @@ public class projWindow1 extends Base_DispWindow {
     //for debug button
     protected static final int numBasePrivFlags = 1;
 
-    public projWindow1(IRenderInterface _p, GUI_AppManager _AppMgr, int _winIdx) {
+    public projWindow1(IGraphicsAppInterface _p, GUI_AppManager _AppMgr, int _winIdx) {
         super(_p, _AppMgr, _winIdx);
     }
 

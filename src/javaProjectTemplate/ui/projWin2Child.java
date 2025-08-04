@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 
 import base_Math_Objects.vectorObjs.doubles.myPoint;
 import base_Math_Objects.vectorObjs.doubles.myVector;
-import base_Render_Interface.IRenderInterface;
+import base_Render_Interface.IGraphicsAppInterface;
 import base_UI_Objects.GUI_AppManager;
 import base_UI_Objects.windowUI.base.Base_DispWindow;
 import base_UI_Objects.windowUI.base.GUI_AppWinVals;
@@ -20,7 +20,7 @@ public class projWin2Child extends Base_DispWindow {
      */
     protected final projWindow2 owningWin;
 
-    public projWin2Child(IRenderInterface _p, GUI_AppManager _AppMgr, GUI_AppWinVals _winInitVals, projWindow2 _owningWin) {
+    public projWin2Child(IGraphicsAppInterface _p, GUI_AppManager _AppMgr, GUI_AppWinVals _winInitVals, projWindow2 _owningWin) {
         super(_p, _AppMgr, _winInitVals);
         owningWin = _owningWin;
     }
