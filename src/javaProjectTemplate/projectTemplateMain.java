@@ -73,6 +73,20 @@ public class projectTemplateMain extends GUI_AppManager {
     @Override
     protected int setAppWindowDimRestrictions() {    return 1;}   
     
+    @Override
+    protected boolean hideAppFlag_DebugMode() {             return false;}
+    @Override
+    protected boolean hideAppFlag_SaveAnim() {              return false;}
+    @Override
+    protected boolean hideAppFlag_RunSim() {                return false;}
+    @Override
+    protected boolean hideAppFlag_SingleStep() {            return false;}
+    @Override
+    protected boolean hideAppFlag_showRtSideInfoDisp() {    return false;}
+    @Override
+    protected boolean hideAppFlag_showStatusBar() {         return false;}
+    @Override
+    protected boolean hideAppFlag_showCanvas() {            return false;}  
     /**
      * Set various or modify relevant runtime arguments in argsMap
      * @param _passedArgs command-line arguments
@@ -96,19 +110,10 @@ public class projectTemplateMain extends GUI_AppManager {
         setDesired3DGridDims(GridDim_3D);        
     }
     /**
-     * this is called to determine which main flags to display in the window
-     */
-    @Override
-    protected void initBaseFlags_Indiv() {
-        // TODO Auto-generated method stub
-
-    }
-    /**
      * this is called to build all the Base_DispWindows in the instancing class
      */
     @Override
     protected void initAllDispWindows() {
-        showInfo = true;
         // each window title and description goes here - leave idx 0 blank
         String[] _winTitles = new String[]{"","Window 1","Window 2"},
                 _winDescr = new String[]{"", "Desc for Window 1","Desc for Window 2"};
@@ -190,7 +195,6 @@ public class projectTemplateMain extends GUI_AppManager {
     @Override
     protected void initOnce_Indiv() {
         setWinVisFlag(dispWindow1IDX, true);
-        setShowStatusBar(true);
     }
     
     /**
@@ -209,7 +213,7 @@ public class projectTemplateMain extends GUI_AppManager {
      * @param is3DDraw
      */
     @Override
-    protected void drawMePost_Indiv(float modAmtMillis, boolean is3dDraw) {}
+    protected void drawMePost_Indiv(float modAmtMillis, boolean is3dDraw, boolean isGlblAppDebug) {}
 
     @Override
     protected void handleKeyPress(char key, int keyCode) {

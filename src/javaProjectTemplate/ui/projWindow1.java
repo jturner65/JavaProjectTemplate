@@ -8,6 +8,7 @@ import base_Math_Objects.vectorObjs.doubles.myPoint;
 import base_Math_Objects.vectorObjs.doubles.myVector;
 import base_Render_Interface.IGraphicsAppInterface;
 import base_UI_Objects.GUI_AppManager;
+import base_UI_Objects.baseApp.GUI_AppUIFlags;
 import base_UI_Objects.windowUI.base.Base_DispWindow;
 import base_UI_Objects.windowUI.base.GUI_AppWinVals;
 import base_UI_Objects.windowUI.drawnTrajectories.DrawnSimpleTraj;
@@ -44,7 +45,7 @@ public class projWindow1 extends Base_DispWindow {
     protected final void buildAndSetChildWindow_Indiv(GUI_AppWinVals _appVals) {} 
     
     @Override
-    protected void initDispFlags() {
+    protected void initDispFlags(GUI_AppUIFlags appUIFlags) {
         // TODO Auto-generated method stub
 
     }
@@ -145,25 +146,25 @@ public class projWindow1 extends Base_DispWindow {
     }
 
     @Override
-    protected void drawCustMenuObjs(float animTimeMod) {
+    protected void drawCustMenuObjs(float animTimeMod, boolean isGlblAppDebug) {
         // TODO Auto-generated method stub
 
     }
 
     @Override
-    protected void drawOnScreenStuffPriv(float modAmtMillis) {
+    protected void drawOnScreenStuffPriv(float modAmtMillis, boolean isGlblAppDebug) {
         // TODO Auto-generated method stub
 
     }
 
     @Override
-    protected void drawRightSideInfoBarPriv(float modAmtMillis) {
+    protected void drawRightSideInfoBarPriv(float modAmtMillis, boolean isGlblAppDebug) {
         // TODO Auto-generated method stub
 
     }
 
     @Override
-    protected void drawMe(float animTimeMod) {
+    protected void drawMe(float animTimeMod, boolean isGlblAppDebug) {
         // TODO Auto-generated method stub
 
     }
