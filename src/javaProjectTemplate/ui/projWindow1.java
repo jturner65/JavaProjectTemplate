@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 import base_Math_Objects.vectorObjs.doubles.myPoint;
-import base_Math_Objects.vectorObjs.doubles.myVector;
 import base_Render_Interface.IGraphicsAppInterface;
 import base_UI_Objects.GUI_AppManager;
 import base_UI_Objects.baseApp.GUI_AppUIFlags;
@@ -188,13 +187,13 @@ public class projWindow1 extends Base_DispWindow {
     }
 
     @Override
-    protected boolean hndlMouseClick_Indiv(int mouseX, int mouseY, myPoint mseClckInWorld, int mseBtn) {
+    protected boolean hndlMouseClick_Indiv(int mouseX, int mouseY, int mseBtn) {
         // TODO Auto-generated method stub
         return false;
     }
 
     @Override
-    protected boolean hndlMouseMove_Indiv(int mouseX, int mouseY, myPoint mseClckInWorld) {
+    protected boolean hndlMouseMove_Indiv(int mouseX, int mouseY) {
         // TODO Auto-generated method stub
         return false;
     }
@@ -206,8 +205,7 @@ public class projWindow1 extends Base_DispWindow {
     }
 
     @Override
-    protected boolean hndlMouseDrag_Indiv(int mouseX, int mouseY, int pmouseX, int pmouseY, myPoint mouseClickIn3D,
-            myVector mseDragInWorld, int mseBtn) {
+    protected boolean hndlMouseDrag_Indiv(int mouseX, int mouseY, int pmouseX, int pmouseY, int mseBtn) {
         // TODO Auto-generated method stub
         return false;
     }
